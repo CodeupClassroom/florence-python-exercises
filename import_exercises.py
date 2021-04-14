@@ -63,7 +63,7 @@ print(f'Total balance in users: ${total_balances}')
 avg_balance = total_balances / numusers
 print(f'Average balance in users: ${avg_balance:.6}')
 #         - User with the lowest balance
-min_bal_usr = [accnt for accnt in profiles if float(accnt['balance'][1:].replace(',','')) == max(bal_list)][0]
+min_bal_usr = [accnt for accnt in profiles if float(accnt['balance'][1:].replace(',','')) == min(bal_list)][0]
 print('User with minimum balance: ', min_bal_usr['name'])
 # 
 #         - User with the highest balance
